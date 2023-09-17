@@ -80,7 +80,7 @@ class AWSPublisher(CloudPublisher):
         # The following envs are expeceted to be a Jenkins env variable
         self.aws_marketplace_scanner_arn = os.environ["AWS_MARKETPLACE_SCANNER_ARN"]
         # Our aws marketplace product ID
-        self.production_id = os.environ["AWS_AMI_IMAGE_PRODUCT_ID"]
+        self.production_id = self.NON_PRODUCTION_ID
 
     class ChangeTypes(enum.StrEnum):
         ADD_DELIVERY_OPTIONS = "AddDeliveryOptions"  # for updating the version

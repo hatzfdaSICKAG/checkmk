@@ -67,6 +67,7 @@ def safe_branch_name(scm) {
 }
 
 def get_cmk_version(branch, version) {
+    return "2.2.0p3"
     return (
       // Regular daily build of master branch
       (branch == 'master' && version == 'daily') ? "${build_date}" :

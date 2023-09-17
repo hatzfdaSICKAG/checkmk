@@ -11,7 +11,7 @@
 /// Depends on: Ubuntu 22.04 package beeing available on download.checkmk.com (will be fetched by ansible collection)
 
 def build_cloud_images_names(version) {
-    def version_suffix = "${version}-build-${env.BUILD_NUMBER}";
+    def version_suffix = "${version}-build-144";
     return ["cmk-ami-https-${version_suffix}", "cmk-azure-${version_suffix}"]
 }
 
